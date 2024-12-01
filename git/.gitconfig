@@ -1,0 +1,14 @@
+[include]
+    path = ~/.gitconfig.user
+
+[commit]
+    gpgSign = true
+
+[tag]
+    gpgSign = true
+
+[gpg]
+    format = ssh
+
+[url "git@github.com:"]
+    insteadOf = https://github.com/
