@@ -1,0 +1,103 @@
+# BEGIN_KITTY_THEME
+# Kaolin Temple
+# include current-theme.conf
+
+# =============================
+# ======= window stuff ========
+# =============================
+# # Set the initial window size
+# remember_window_size  no
+# initial_window_width  1000
+# initial_window_height 800
+#
+# # Configure the layout
+# window_border_width 0.5pt
+# window_margin_width 0
+# window_padding_width 0
+# active_border_color #00ff00
+# inactive_border_color #cccccc
+#
+# # Adjust the split ratio (adjust as needed)
+# --start-as split
+#
+# # Launch with two windows
+# enabled_layouts tall:bias=50;full_size=1
+# launch zsh
+# launch zsh
+#
+# # Set the initial window size
+# remember_window_size  no
+# initial_window_width  1000
+# initial_window_height 800
+#
+# # Configure the layout
+# window_border_width 0.5pt
+# window_margin_width 0
+# window_padding_width 0
+# active_border_color #00ff00
+# inactive_border_color #cccccc
+#
+# # Adjust the split ratio (adjust as needed)
+# --start-as split
+
+include ryan-theme.conf
+
+allow_remote_control yes
+listen_on unix:/tmp/kitty
+delete_is_del yes
+# hide_window_decorations yes
+disable_ligatures always
+
+disable_mouse_reporting yes
+
+
+#: Window
+# hide_window_decorations titlebar-only
+
+# MacOS
+macos_titlebar_color #231720
+macos_titlebar_color_focus #231720
+# macos_show_window_title_in none
+macos_option_as_alt left
+
+# padding
+padding_left 0
+padding_right 0
+padding_top 0
+padding_bottom 0
+window_padding_width 0
+window_margin_width 0
+window_border_width 1
+
+# clipboard_control write-clipboard write-primary no-append
+
+# rounded_corners
+# rounding 10
+# border color
+
+# background_tint 0.8
+#background_image_layout tiled
+
+enabled_layouts tall:bias=70;full_size=1;mirrored=false, fat:bias=80;full_size=1;mirrored=false
+
+# cursor_shape block
+# cursor_beam_thickness 1.0
+
+draw_minimal_borders no
+# window_border_width 0pt
+# single_window_margin_width 0
+# window_margin_width 4
+# window_padding_width 0
+# active_border_color #00ff00
+# inactive_border_color #cccccc
+# window_padding_width 0
+# tab_bar_edge_padding 20
+
+
+# BEGIN_KITTY_FONTS
+font_family      family="FiraCode Nerd Font Mono"
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+# END_KITTY_FONTS
+
