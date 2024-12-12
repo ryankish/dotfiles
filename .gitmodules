@@ -1,6 +1,9 @@
 [submodule "nvim/.config/nvim"]
 	path = nvim/.config/nvim
-	url = git@github.com:ryankish/kickstart-modular.nvim.git
+	url = https://github.com/ryankish/kickstart-modular.nvim.git
+	branch = ryan
+
 [submodule "tmux/.config/tmux"]
 	path = tmux/.config/tmux
-	url = git@github.com:ryankish/tmux.git
+	url = https://github.com/ryankish/tmux.git
+	branch = main
