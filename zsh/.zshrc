@@ -47,3 +47,5 @@ bindkey "^?" backward-delete-char
 bindkey "^W" backward-kill-word
 bindkey "^H" backward-delete-char
 bindkey "^U" backward-kill-line
+alias sour='source .venv/bin/activate'
+
