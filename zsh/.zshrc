@@ -1,6 +1,18 @@
 # Set Zsh as the default shell
 export SHELL=/bin/zsh
 
+source $HOME/.local/bin/env
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Source /etc/profile for system-wide configuration
+if [ -f /etc/profile ]; then
+    source /etc/profile
+fi
+
+
 # Prompt configuration
 autoload -Uz vcs_info
 
@@ -47,5 +59,24 @@ bindkey "^?" backward-delete-char
 bindkey "^W" backward-kill-word
 bindkey "^H" backward-delete-char
 bindkey "^U" backward-kill-line
+
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+#
+
+. "$HOME/.local/bin/env"
+HISTFILE=~/.zsh_history  # Set the history file location
+HISTSIZE=10000           # Number of commands to save in memory
+SAVEHIST=10000           # Number of commands to save in the history file
+setopt INC_APPEND_HISTORY # Append to history file in real-time
+setopt SHARE_HISTORY     # Share history across sessions
+setopt EXTENDED_HISTORY  # Save timestamps in history
+
 alias sour='source .venv/bin/activate'
+export UV_PYTHON=3.11
+alias clauded='claude --permission-mode bypassPermissions'
+alias codexd='codex --dangerously-bypass-approvals-and-sandbox'
+
+alias lg='lazygit'
 
