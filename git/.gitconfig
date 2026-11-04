@@ -10,6 +10,12 @@
 [gpg]
     format = ssh
 
+# Own repos (dotfiles and its submodules) always over ssh, so they keep
+# working if made private. Everything else is fetched over https (lazy.nvim
+# plugins need no key) and pushed over ssh.
+[url "git@github.com:ryankish/"]
+    insteadOf = https://github.com/ryankish/
+
 [url "git@github.com:"]
     pushInsteadOf = https://github.com/
 
