@@ -1,7 +1,7 @@
 # Set Zsh as the default shell
-export SHELL=/bin/zsh
+export SHELL="$(command -v zsh)"
 
-source $HOME/.local/bin/env
+[ -f "$HOME/.local/bin/env" ] && . "$HOME/.local/bin/env"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -65,7 +65,7 @@ bindkey "^U" backward-kill-line
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 #
 
-. "$HOME/.local/bin/env"
+[ -f "$HOME/.local/bin/env" ] && . "$HOME/.local/bin/env"
 HISTFILE=~/.zsh_history  # Set the history file location
 HISTSIZE=10000           # Number of commands to save in memory
 SAVEHIST=10000           # Number of commands to save in the history file
