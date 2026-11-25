@@ -69,8 +69,10 @@ setopt EXTENDED_HISTORY  # Save timestamps in history
 
 alias sour='source .venv/bin/activate'
 export UV_PYTHON=3.11
-alias clauded='claude --permission-mode bypassPermissions'
-alias codexd='codex --dangerously-bypass-approvals-and-sandbox'
+alias claude='claude --permission-mode bypassPermissions'
+alias claudes='\claude'
+alias codex='codex --dangerously-bypass-approvals-and-sandbox'
+alias codexs='\codex'
 
 alias lg='lazygit'
 
