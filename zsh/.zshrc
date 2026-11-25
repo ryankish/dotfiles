@@ -60,12 +60,6 @@ bindkey "^W" backward-kill-word
 bindkey "^H" backward-delete-char
 bindkey "^U" backward-kill-line
 
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-#
-
-[ -f "$HOME/.local/bin/env" ] && . "$HOME/.local/bin/env"
 HISTFILE=~/.zsh_history  # Set the history file location
 HISTSIZE=10000           # Number of commands to save in memory
 SAVEHIST=10000           # Number of commands to save in the history file
